@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: smoothscroller\n"
+"POT-Creation-Date: 2015-09-21 09:40+1000\n"
+"PO-Revision-Date: 2015-09-21 09:40+1000\n"
+"Last-Translator: Neil Gee <ngowran@mac.com>\n"
+"Language-Team: WP Beaches <web@wpbeaches.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../smoothscroller.php:242
+msgid "Speed of scroll (Lower numbers are faster)"
+msgstr ""
+
+#: ../smoothscroller.php:258
+msgid "Check to enable Smoothscroller on all posts/pages"
+msgstr ""
+
+#: ../smoothscroller.php:273
+msgid "Check to enable Smoothscroller on Home/Front page"
+msgstr ""
+
+#: ../smoothscroller.php:289
+msgid "Comma Separate the ID values"
+msgstr ""
+
+#: ../smoothscroller.php:305
+msgid " Comma Separate the ID values"
+msgstr ""
+
+#: ../smoothscroller.php:322
+msgid "Smoothscroller Options Plugin"
+msgstr ""
+
+#: ../smoothscroller.php:323
+msgid "Smoothscroller"
+msgstr ""
