@@ -36,7 +36,7 @@ This section describes how to install the plugin:
 
 The settings are found via the dashboard Settings > matchHeight
 
-- Comma separate the elements that you want to squal in height
+- Comma separate the HTML elements that you want to equal in height by adding in their CSS class or ID
 
 
 == Screenshots ==

@@ -150,8 +150,6 @@ function mh_selectors_callback() {
 $options = get_option( 'matchheight_settings' ); 
 
 if( !isset( $options['mh_selectors'] ) ) $options['mh_selectors'] = '';
-
-
 echo '<input type="text" id="mh_selectors" name="matchheight_settings[mh_selectors]" value="' . sanitize_text_field($options['mh_selectors']) . '" placeholder="Add element CSS Class or ID to equal in height" class="regular-text" >';
 echo '<label for="mh_selectors">' . esc_attr_e( 'Add element CSS Class or ID to equal in height, comma separate multiple elements','matchheight') . '</label>';
 }
