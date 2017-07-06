@@ -5,7 +5,7 @@ Plugin Name: matchHeight
 Plugin URI: http://wpbeaches.com/
 Description: Adds the matchHeight jQuery plugin which makes the height of all selected elements exactly equal
 Author: Neil Gee
-Version: 1.1.0
+Version: 1.2.0
 Author URI: http://wpbeaches.com
 Text Domain: matchheight
 Domain Path: /languages/
@@ -58,7 +58,7 @@ function scripts_styles() {
      $data = array (
 
       'mh_inner_array' => array(
-          
+
           'mh_selectors'  => $options['mh_selectors'], // this the selectors field
 
       ),
@@ -71,7 +71,7 @@ function scripts_styles() {
   }
 
 
-  
+
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\scripts_styles' );
@@ -102,7 +102,7 @@ function plugin_settings(){
          __NAMESPACE__ . '\\mh_selectors_callback', //callback function below
         'matchheight', //page that it appears on
         'mh_matchheight_section' //settings section declared in add_settings_section
-    ); 
+    );
 }
 add_action('admin_init', __NAMESPACE__ . '\\plugin_settings');
 
@@ -117,21 +117,21 @@ add_action('admin_init', __NAMESPACE__ . '\\plugin_settings');
 function matchheight_validate_input( $input ) {
    // Create our array for storing the validated options
     $output = array();
-     
+
     // Loop through each of the incoming options
     foreach( $input as $key => $value ) {
-         
+
         // Check to see if the current option has a value. If so, process it.
         if( isset( $input[$key] ) ) {
-         
+
             // Strip all HTML and PHP tags and properly handle quoted strings
             $output[$key] = strip_tags( stripslashes( $input[ $key ] ) );
-             
+
         } // end if
 
-         
+
     } // end foreach
-     
+
     // Return the array processing any additional functions filtered by this action
     return apply_filters( 'matchheight_validate_input' , $output, $input );
 }
@@ -147,7 +147,7 @@ function mh_matchheight_section_callback() {
  */
 
 function mh_selectors_callback() {
-$options = get_option( 'matchheight_settings' ); 
+$options = get_option( 'matchheight_settings' );
 
 if( !isset( $options['mh_selectors'] ) ) $options['mh_selectors'] = '';
 echo '<input type="text" id="mh_selectors" name="matchheight_settings[mh_selectors]" value="' . sanitize_text_field($options['mh_selectors']) . '" placeholder="Add element CSS Class or ID to equal in height" class="large-text" />';

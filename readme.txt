@@ -4,8 +4,8 @@ Contributors: neilgee
 Donate link: http://wpbeaches.com/
 Tags: match, height, size
 Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 1.1.0
+Tested up to: 4.8
+Stable tag: 1.2.0
 Plugin Name: matchHeight
 Plugin URI: http://wpbeaches.com
 Description: matchheight makes the height of all selected elements exactly equal in height.
@@ -42,7 +42,7 @@ The settings are found via the dashboard Settings > matchHeight
 
 - Comma separate the HTML elements that you want to equal in height by adding in their CSS class or ID
 
-The plugin is essentially a wrapper for the excellent <a href="https://github.com/liabru/jquery-match-height">jQuery matchHeight.js by Liam Brummit</a> 
+The plugin is essentially a wrapper for the excellent <a href="https://github.com/liabru/jquery-match-height">jQuery matchHeight.js by Liam Brummit</a>
 
 
 == Screenshots ==
@@ -50,6 +50,11 @@ The plugin is essentially a wrapper for the excellent <a href="https://github.co
 1. Where to add the element selectors
 
 == Changelog ==
+
+= 1.2.0 =
+
+* Upgraded to matchHeight core version 0.7.2
+06/7/17
 
 = 1.1.0 =
 
